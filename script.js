@@ -22,7 +22,7 @@ function updateSensorData() {
 
     if (isBreaching) {
       sensorCard.classList.add("alert");
-      status.textContent = `Alert: Cattle Detected!`;
+      status.textContent = `Warning: Cattle is too close!`;
       buzzerImage.style.display = "block"; // Show the buzzer image
     } else {
       sensorCard.classList.remove("alert");
