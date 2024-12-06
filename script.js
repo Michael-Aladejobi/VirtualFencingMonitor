@@ -47,5 +47,5 @@ function updateSensorData() {
   });
 }
 
-// Update every 2 seconds
-setInterval(updateSensorData, 2000);
+// Update every 4 seconds
+setInterval(updateSensorData, 4000);
