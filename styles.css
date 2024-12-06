@@ -11,7 +11,7 @@ header {
   background-color: #4caf50;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .sensor-grid {
@@ -51,38 +51,36 @@ header {
   color: red;
 }
 
-/* Add styles for the buzzer icon */
-.buzzer-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  display: block;
-  animation: blink 1s infinite;
+/* Buzzer Image */
+.sensor-card .buzzer {
+  display: none; /* Hidden by default */
+  width: 40px; /* Adjust size */
+  height: 40px;
+  margin: 10px auto; /* Center it within the card */
 }
 
-/* Hidden class to hide the buzzer */
-.hidden {
-  display: none;
-}
-
-/* Blinking animation for the buzzer */
-@keyframes blink {
+/* Buzz Animation */
+@keyframes buzz {
   0%,
   100% {
-    opacity: 1;
+    transform: scale(1);
   }
   50% {
-    opacity: 0.5;
+    transform: scale(1.1);
   }
+}
+
+/* Show Buzzer Image During Alert */
+.sensor-card.alert .buzzer {
+  display: block;
+  animation: buzz 0.5s infinite; /* Add subtle buzzing animation */
 }
 
 footer {
   background-color: #4caf50;
   color: white;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   position: fixed;
   bottom: 0;
   width: 100%;

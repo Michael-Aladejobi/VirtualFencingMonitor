@@ -6,7 +6,16 @@ function updateSensorData() {
   sensors.forEach((sensor) => {
     const sensorCard = document.getElementById(`sensor-${sensor}`);
     const status = sensorCard.querySelector(".status");
-    const buzzerIcon = sensorCard.querySelector(".buzzer-icon");
+
+    // Create a buzzer image dynamically if not already present
+    let buzzerImage = sensorCard.querySelector(".buzzer");
+    if (!buzzerImage) {
+      buzzerImage = document.createElement("img");
+      buzzerImage.src = "assets/buzzer.gif"; // Path to your buzzer image
+      buzzerImage.alt = "Buzzer Active";
+      buzzerImage.className = "buzzer";
+      sensorCard.appendChild(buzzerImage);
+    }
 
     // Simulate detection (replace this with actual data)
     const isBreaching = Math.random() > 0.8;
@@ -14,11 +23,11 @@ function updateSensorData() {
     if (isBreaching) {
       sensorCard.classList.add("alert");
       status.textContent = `Alert: Cattle Detected!`;
-      buzzerIcon.classList.remove("hidden"); // Show buzzer icon
+      buzzerImage.style.display = "block"; // Show the buzzer image
     } else {
       sensorCard.classList.remove("alert");
       status.textContent = "Normal";
-      buzzerIcon.classList.add("hidden"); // Hide buzzer icon
+      buzzerImage.style.display = "none"; // Hide the buzzer image
     }
   });
 }
