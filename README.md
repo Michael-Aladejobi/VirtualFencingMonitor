@@ -156,7 +156,7 @@ This project is developed under the guidance and supervision of Prof. Mrs. Arogu
 
 ## **Acknowledgments**
 
-I would like to express my heartfelt gratitude to my supervisor, Prof. Mrs. Arogudade, Head of Department, Computer Science, FUNAAB, for her invaluable guidance, insights, and encouragement throughout this project. Your support has been instrumental in shaping the success of this work.
+I would like to express my heartfelt gratitude to my supervisor, PROF. MRS AROGUNDADE, Head of Department, Computer Science, FUNAAB, for her invaluable guidance, insights, and encouragement throughout this project. Your support has been instrumental in shaping the success of this work.
 
 Special thanks also go to the Computer Science Department at FUNAAB for providing the resources and platform to develop this innovative solution.
 My Acknowlegement also go to ETTRONICS HIGHTECH LIMITED at https://www.ettronics.com for the knowledge impacting during my industrial training.
