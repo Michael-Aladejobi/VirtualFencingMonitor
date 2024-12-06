@@ -76,6 +76,27 @@ header {
   animation: buzz 0.5s infinite; /* Add subtle buzzing animation */
 }
 
+/* Mobile-Responsive Design */
+@media (max-width: 600px) {
+  .sensor-grid {
+    grid-template-columns: 1fr; /* Stack cards in one column */
+  }
+
+  .sensor-card {
+    padding: 0.8rem; /* Reduce padding for smaller screens */
+  }
+
+  .sensor-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+  }
+
+  .buzzer {
+    width: 30px; /* Adjust buzzer size */
+    height: 30px;
+  }
+}
+
 footer {
   background-color: #4caf50;
   color: white;
