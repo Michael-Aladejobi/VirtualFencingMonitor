@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- A Real-Time IoT-Based Virtual Fencing System for Effective Livestock Management Using Proximity Sensors and ESP32 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
-    <link rel="apple-touch-icon" href="assets/favicon.jpg">
+  <!-- A Real-Time IoT-Based Virtual Fencing System for Effective Livestock Management Using Proximity Sensors and ESP32 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
+    <link rel="apple-touch-icon" href="assets/favicon.jpg" />
     <title>Virtual Fencing Monitor</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Virtual Fencing Monitor</h1>
+      <h1>Virtual Fencing Monitor</h1>
     </header>
     <main>
-        <div class="sensor-grid">
-            <div class="sensor-card" id="sensor-1">
-                <img src="assets/sensor-icon.gif" alt="Sensor 1 Icon" class="sensor-icon">
-                <h2>Sensor 1</h2>
-                <p>Status: <span class="status">Normal</span></p>
-            </div>
-            <div class="sensor-card" id="sensor-2">
-                <img src="assets/sensor-icon.gif" alt="Sensor 2 Icon" class="sensor-icon">
-                <h2>Sensor 2</h2>
-                <p>Status: <span class="status">Normal</span></p>
-            </div>
-            <div class="sensor-card" id="sensor-3">
-                <img src="assets/sensor-icon.gif" alt="Sensor 3 Icon" class="sensor-icon">
-                <h2>Sensor 3</h2>
-                <p>Status: <span class="status">Normal</span></p>
-            </div>
-            <div class="sensor-card" id="sensor-4">
-                <img src="assets/sensor-icon.gif" alt="Sensor 4 Icon" class="sensor-icon">
-                <h2>Sensor 4</h2>
-                <p>Status: <span class="status">Normal</span></p>
-            </div>
+      <div class="sound-toggle">
+        <label>
+          <input type="checkbox" id="sound-toggle" checked />
+          Enable Sound Alerts
+        </label>
+      </div>
+      <div class="sensor-grid">
+        <div class="sensor-card" id="sensor-1">
+          <img
+            src="assets/sensor-icon.gif"
+            alt="Sensor 1 Icon"
+            class="sensor-icon"
+          />
+          <h2>Sensor 1</h2>
+          <p>Status: <span class="status">Normal</span></p>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="sensor-card" id="sensor-2">
+          <img
+            src="assets/sensor-icon.gif"
+            alt="Sensor 2 Icon"
+            class="sensor-icon"
+          />
+          <h2>Sensor 2</h2>
+          <p>Status: <span class="status">Normal</span></p>
+        </div>
+        <div class="sensor-card" id="sensor-3">
+          <img
+            src="assets/sensor-icon.gif"
+            alt="Sensor 3 Icon"
+            class="sensor-icon"
+          />
+          <h2>Sensor 3</h2>
+          <p>Status: <span class="status">Normal</span></p>
+        </div>
+        <div class="sensor-card" id="sensor-4">
+          <img
+            src="assets/sensor-icon.gif"
+            alt="Sensor 4 Icon"
+            class="sensor-icon"
+          />
+          <h2>Sensor 4</h2>
+          <p>Status: <span class="status">Normal</span></p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
     <footer>
-        <p style="margin-bottom:5px;">&copy; Nimfence | Real-Time Monitoring</p>
-        <small style="font-size: 12px; ">Supervised by Prof. Mrs Arogundade</small>
+      <p style="margin-bottom: 5px">&copy; Nimfence | Real-Time Monitoring</p>
+      <small style="font-size: 12px">Supervised by Prof. Mrs Arogundade</small>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
