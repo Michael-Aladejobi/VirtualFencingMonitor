@@ -1,5 +1,3 @@
-// script.js
-
 // Simulate real-time data (this will be replaced with Firebase later)
 function updateSensorData() {
   const sensors = [1, 2, 3, 4];
@@ -24,10 +22,20 @@ function updateSensorData() {
       sensorCard.classList.add("alert");
       status.textContent = `Warning: Cattle is too close!`;
       buzzerImage.style.display = "block"; // Show the buzzer image
+
+      // Trigger phone vibration
+      if ("vibrate" in navigator) {
+        navigator.vibrate([200, 100, 200]); // Vibrate in a pattern: vibrate-pause-vibrate
+      }
     } else {
       sensorCard.classList.remove("alert");
       status.textContent = "Normal";
       buzzerImage.style.display = "none"; // Hide the buzzer image
+
+      // Stop vibration when no alert
+      if ("vibrate" in navigator) {
+        navigator.vibrate(0); // Stop vibration
+      }
     }
   });
 }
