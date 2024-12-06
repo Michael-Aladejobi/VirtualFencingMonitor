@@ -137,8 +137,8 @@ The system monitors livestock within a predefined rectangular boundary, detects 
 
    - Add email or SMS alerts for boundary breaches.
 
-3. **Mobile App**:
-   - Develop a dedicated mobile app for enhanced accessibility and functionality.
+3. **Responsive User-Interface**:
+   - Develop a dedicated web app for enhanced accessibility and functionality.
 
 ---
 
